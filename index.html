@@ -6,6 +6,11 @@
 	</head>
 
 	<body>
-		
+		Ваш IP-адрес: <b><?php echo $_SERVER['REMOTE_ADDR'] ?></b>
+		<form action="auth.php">
+			Логин: <input type="text" name="login" value=""><br>
+			Пароль: <input type="text" name="password" value=""><br>
+			<input type="submit" value="Авторизоваться"><br>
+		</form>
 	</body>
 </html>
